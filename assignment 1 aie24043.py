@@ -1,4 +1,5 @@
 import numpy #required for matrix operations 
+import random # required for generation random numbers
 from numpy.linalg import matrix_power #inbuilt funcyion already existing for matrix exponentiation
 def sum(list1, sum): #function 1 that finds multiple combinations of numbers leading to the desired sum
     count1=0
@@ -76,12 +77,13 @@ def main(): # main function
         string1="hippopotamus"
         print(charcount(string1))
     elif choice==5:
-        arr1=[10, 20, 20, 30]
+        arr1 = [random.randint(1, 100) for _ in range(25)]
         print(meanmedmod(arr1))
     else:
         print("tough luck no more functions to try out hahaha")
 
 main()
+
 
 
     
