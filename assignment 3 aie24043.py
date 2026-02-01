@@ -155,6 +155,7 @@ def a14_matrix_inversion_classifier(X_train, y_train, X_test): #Compared kNN per
 
 #  MAIN 
 def main():
+    print("this code was written and developed by ROHAN U (bl.sc.u4aie24043) ")
     df = pd.read_excel(r"C:\Users\rohan\Downloads\ml assignments\dataset2.xlsx")
 
     features = [c for c in df.columns if c.startswith("EEG")]
@@ -201,3 +202,4 @@ def main():
 
 
 main()
+
